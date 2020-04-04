@@ -57,6 +57,6 @@ app.get('/add/:Name/:Contact',(req,res)=>{
 
 
 // Hosting Port
-const port=process.env.Port || config.httpPort;
+const port=process.env.Port || 3000;
 app.listen(port,()=>console.log("Server Started")
 )
