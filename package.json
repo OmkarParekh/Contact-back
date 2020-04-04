@@ -6,6 +6,9 @@
   "scripts": {
     "run": "nodemon server.js"
   },
+  "engines": {
+    "node": "12.16.1"
+  },
   "author": "Omkar Parekh",
   "license": "MIT",
   "dependencies": {
