@@ -1,0 +1,19 @@
+{
+  "name": "contactmanager",
+  "version": "1.0.0",
+  "description": "BackEnd of Contact manager",
+  "main": "server.js",
+  "scripts": {
+    "run": "nodemon server.js"
+  },
+  "author": "Omkar Parekh",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "error-ex": "git+https://github.com/Qix-/node-error-ex.git",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.5",
+    "nodemon": "^2.0.2"
+  }
+}
