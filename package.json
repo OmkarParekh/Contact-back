@@ -4,7 +4,7 @@
   "description": "BackEnd of Contact manager",
   "main": "server.js",
   "scripts": {
-    "run": "node server.js"
+    "start": "node server.js"
   },
   "author": "Omkar Parekh",
   "license": "MIT",
