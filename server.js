@@ -38,6 +38,14 @@ app.get('/display',(req,res)=>{
      })
 })
 
+// Deleting Contact
+app.get('/delete/:id',(req,res)=>{
+    Contact.remove({_id:req.params.id})
+    .then(()=>{
+        console.log(`Data Deleted of id ${req.params.id}`)
+    })
+})
+
 
 
 // Add the Contact
