@@ -39,8 +39,8 @@ app.get('/display',(req,res)=>{
 })
 
 // Deleting Contact
-app.get('/delete/:id',(req,res)=>{
-    Contact.remove({_id:req.params.id})
+app.post('/delete/:id',(req,res)=>{
+    Contact.deleteOne({_id:req.params.id})
     .then(()=>{
         console.log(`Data Deleted of id ${req.params.id}`)
     })
@@ -49,7 +49,7 @@ app.get('/delete/:id',(req,res)=>{
 
 
 // Add the Contact
-app.get('/add/:Name/:Contact',(req,res)=>{
+app.post('/add/:Name/:Contact',(req,res)=>{
     const user={
         Name:req.params.Name,
         Number:req.params.Contact
