@@ -4,7 +4,7 @@
   "description": "BackEnd of Contact manager",
   "main": "server.js",
   "scripts": {
-    "start":"nodemon server.js"
+    "start": "nodemon server.js"
   },
   "engines": {
     "node": "12.16.1"
@@ -16,7 +16,7 @@
     "cors": "^2.8.5",
     "error-ex": "git+https://github.com/Qix-/node-error-ex.git",
     "express": "^4.17.1",
-    "mongoose": "^5.9.5",
-    "nodemon": "^2.0.2"
+    "mongoose": "^5.13.13",
+    "nodemon": "^2.0.15"
   }
 }
