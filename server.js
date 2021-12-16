@@ -1,21 +1,13 @@
 const ex=require('express');
 const mon=require('mongoose')
 const app=ex();
-
-
-
 // cors For no cors Error
 const cors = require('cors');
 app.use(cors())
-
-
-
 /// Mongo Connection 
-mon.connect('mongodb+srv://omkarparekh:omkarparekh@cluster0-6r5le.mongodb.net/test?retryWrites=true&w=majority',{ useNewUrlParser: true , useUnifiedTopology: true})
+mon.connect('mongodb+srv://omkarparekh:omkarparekh@cluster0.6r5le.mongodb.net/test?retryWrites=true&w=majority',{ useNewUrlParser: true , useUnifiedTopology: true})
 .then(res=>console.log("Mongodb connected"))
 .catch(err=>console.log("err"))
-
-
 
 // index
 app.get('/',(req,res)=>{
